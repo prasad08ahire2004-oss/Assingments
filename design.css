@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#one {
+    width: 100%;
+    height:200px;
+    background-color: #08011f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;;
+}
+
+#one h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#one p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#two {
+    width: 800px;
+    height: 300px;
+    background-color: rgb(160, 173, 64);
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#two h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center; 
+}
+
+#two p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#three {
+    width: 800px;
+    height: 300px;
+    background-color: #74d991;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+} 
+
+#three h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+#three p {
+    width: 500px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#four {
+    width: 800px;
+    height: 300px;
+    background-color: rgb(220, 234, 112);
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+#four h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+#four p {
+    width: 500px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#five {
+    width: 800px;
+    height: 300px;
+    background-color: #eab6a2;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#five h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+#five p {
+    width: 500px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+#six {
+    width: 100%;
+    height:200px;
+    background-color: #420727;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#six h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#six p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+

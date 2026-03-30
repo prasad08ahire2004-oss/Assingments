@@ -1,185 +1,239 @@
+@font-face {
+    font-family: head;
+    src: url(./fonts/DR\ Exclusive\ Editorial.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(./fonts/Comucan_PERSONAL_USE_ONLY.otf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+body , html {
+    width: 100%;
     height: 100%;
-    width: 100%;
 }
 
-#main {
+#parent {
     width: 100%;
-    height: auto;
-    background-image: url(./images/portfolio.jpg);
+    display: grid;
+    grid-template-rows: 600px 400px 600px 600px 300px ;
+    background: linear-gradient(black,rgba(0, 0, 0, 0.477),black);
+}
+
+.alpha {
+    border: none;
+}
+
+#section-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(./images/sofa.jpg);
     background-size: cover;
-    padding: 60px;
-}
-
-#first{
-    width: 1350px;
-    height: 800px;
-    background-color: #08011f;
-    
-    background-color: transparent;
-    position: relative;
+    background-position:center;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 #nav {
-    padding: 30px;
+    width: 100%;
+    height: 80px;
+    background: transparent;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-}
-
-#nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #nav ul {
     display: flex;
-    list-style: none;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    list-style-type: none;
 }
 
 #nav ul li {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7%;
+    background: transparent;
+    font-family: body;
+     color: rgba(0, 0, 0, 0.622);
+}
+
+#nav ul button {
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7%;
+    background: transparent;
+    font-family: body;
+     color: rgba(0, 0, 0, 0.622);
+}
+
+#nav ul button:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+#nav p {
+    padding: 5px;
+    font-size: 35px;
+    font-family: head;
 }
 
 #nav ul li:hover {
-    background-color: white;
+    background-color: black;
     color: white;
 }
 
-#nav ul li:hover a {
-    color: black;
-    background-color: white;
-}
-
-#nav button {
+#content {
+    width: 1200px;
+    height: 150px;
+    background: transparent; 
+    margin-left: 150px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 10px;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-}
-
-#nav button:hover {
-    background-color: white;
-    color: black;
-}
-
-#section {
-    width: 1300px;
-    height: 590px;
-    background-color: transparent;
-    position: absolute;
-    
-    left: 22px;
-    bottom: 100px;
     display: flex;
-}
-
-#section-1 {
-    width: 950px;
-    height: 585px;
-    background: transparent;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 147px;
+    gap: 20px;
+}
+
+.one {
+    width: 400px;
+    height:140px ;
+    background: transparent; 
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.two {
+    width: 610px;
+    height:140px ;
+    background: transparent;
+    padding: 10px;
+}
+
+.two p {
+    font-size: 17px;
+    font-family: body;
+    color: rgba(0, 0, 0, 0.622);
+}
+
+.one h1 {
+    font-family: head;
+    font-size: 40px;
+     color: rgba(0, 0, 0, 0.622);
 }
 
 #section-2 {
-    width: 350px;
-    height: 585px;
-    background: transparent;
-    padding-left: 90px;
-    padding-right: 10px;
-    padding-bottom: 80px;
-    padding-top: 80px;  
+    width: 1400px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 10px;
+    border-radius: 10px;
 }
 
-#section-2 img {
-    width: 100%;
+/* #section-2::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Target the scrollbar container */
+#section-2::-webkit-scrollbar {
+  height: 8px;   /* for horizontal scrollbars */
+  width: 8px;    /* for vertical scrollbars */
+}
+
+/* Track (background of scrollbar) */
+#section-2::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+#section-2::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Hover effect on thumb */
+#section-2::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.apple {
     height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+    width: 300px;
+    background-color: black;
+    flex-shrink: 0;
+    border-radius: 5px;
+
 }
 
-#one {
-    width: 700px;
-    height: 147px;
-    background-color: #fff;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+#img1 {
+    background-image: url(./images/furniture\ 1.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
 }
 
-#two {
-    width: 700px;
-    height: 147px;
-    background-color: #eab6a2;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+#img2 {
+    background-image: url(./images/furniture\ 2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.alpha {
-    width: 200px;
-    height: 147px;
-    background-color: #74d991;
-    border-radius: 10px;
-    position: relative;
-    overflow: auto;
-    background: transparent;
+#img3 {
+    background-image: url(./images/fu\ 3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.alpha::-webkit-scrollbar {
-  display: none;
+#img4 {
+    background-image: url(./images/fu4.png);
+    background-size: cover;
+    background-position: center;
 }
 
-
-.beta {
-    width: 200px;
-    height: 147px;
-    background-color:rgb(0, 0, 0);
-    border-radius: 10px;
-    position: absolute;
-    top: 147px;
-    color: white;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    font-size: 30px;
+#img5 {
+    background-image: url(./images/fu5.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.alpha i {
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    
+#img6 {
+    background-image: url(./images/beach.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.alpha:hover .beta {
-    top: 0;
-    transition: all 0.5s ease; 
+#img7 {
+    background-image: url(./images/edward-he-uKyzXEc2k_s-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+#section-3 {
+    width: 1500px;
+    margin: 5px 5px 5px 5px;
+}
+
